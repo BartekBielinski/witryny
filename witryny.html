@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Witryny zadanie</title>
+</head>
+<body>
+    <h1>Witaj na stronie!</h1>
+
+    <button onclick="pokazAlert()">Pokaż Alert</button>
+    <button onclick="zapytajOImie()">Podaj swoje imię</button>
+    <button onclick="potwierdz()">Potwierdź akcję</button>
+    <button onclick="otworzStrone()">Otwórz nową stronę</button>
+	
+    <script>
+        // Bartosz Bieliński, klasa 3k
+
+       
+        function pokazAlert() {
+            alert("To jest alert");
+        }
+        function zapytajOImie() {
+            const imie = prompt("Jak masz na imię?");
+            if (imie) {
+                alert("Witaj, " + imie + "!");
+            }
+        }
+        function potwierdz() {
+            const decyzja = confirm("Czy chcesz kontynuować?");
+            if (decyzja) {
+                alert("Potwierdziłeś");
+            } else {
+                alert("Anulowałeś akcję.");
+            }
+        }
+        function otworzStrone() {
+            window.open("https://www.example.com", "_blank");
+        }
+    </script>
+</body>
+</html>
